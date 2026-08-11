@@ -8,3 +8,11 @@ Completed tasks:
 
 Tools covered: Github, IAM, AWS root account, Git.
 
+Date 11-08-2026:
+Completed tasks:
+        - EC2 instances launched
+        - Created demo directories for practice of Linux commands.
+        - Logged all commands in session.logs for final presentation.
+
+Terminologies covered: keypair, ssh,chmod,aws ec2,security groups,
+chmod,grep,find,sed,awk.
