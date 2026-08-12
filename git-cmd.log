@@ -22,4 +22,125 @@ nothing added to commit but untracked files present (use "git add" to track)
 [K[?1l>[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit remote -v[?2004l
 origin	https://github.com/haryyy7/internship_f9 (fetch)
 origin	https://github.com/haryyy7/internship_f9 (push)
-[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit 
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit add.  .[?2004l
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit status[?2004l
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   git-cmd.log[m
+
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit commit - m ""L"o"g"g"i"n"g" "g"i"t" "c"o"m"" m"a"n"" " m"a"n"d"s","" ."[1C[?2004l
+[main f3bf9af] Logging git commands.
+ Committer: Harisanker Anil <harisanker@Harisankers-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 25 insertions(+)
+ create mode 100644 git-cmd.log
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit status[?2004l
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git-cmd.log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit switch -c linux-notes[?2004l
+Switched to a new branch 'linux-notes'
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit branch[?2004l
+[?1h=* [32mlinux-notes[m[m
+  main[m[m
+[K[?1l>[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004heecho ""L"i"n"u"x" "p"e"r"m"i"s"" " " " " " " " " " " " D"a"y" "3"[1C ? >> notes.xt  txt[?2004l
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit status[?2004l
+On branch linux-notes
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git-cmd.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnotes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit add notes.txt[?2004l
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit sat  tatus[?2004l
+On branch linux-notes
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   notes.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git-cmd.log[m
+
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit commit -m ""L"i"n"u"x" "l"e"a"n"r"i"g"" " " " r"n"i"g"n"" " n"g" "n"o"t"e"s"[?2004l
+[linux-notes 28fa73a] Linux learning notes
+ Committer: Harisanker Anil <harisanker@Harisankers-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 notes.txt
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit status[?2004l
+On branch linux-notes
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git-cmd.log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit log --onelo ine[?2004l
+[?1h=[33m28fa73a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mlinux-notes[m[33m)[m Linux learning notes[m
+[33mf3bf9af[m[33m ([m[1;32mmain[m[33m)[m Logging git commands.[m
+[33macca9d4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update notes with recent tasks and terminologies[m
+[33mbfca07e[m Add notes on completed tasks and tools covered[m
+[33md8bf84d[m Fix typo in README description[m
+[33m2462ea4[m Update README to clarify project focus[m
+[33m1b0e8c5[m Initial commit[m
+[K[?1l>[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004hggit push - u u origin linux -notes[?2004l
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 1.21 KiB | 1.21 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+remote: 
+remote: Create a pull request for 'linux-notes' on GitHub by visiting:[K
+remote:      https://github.com/haryyy7/internship_f9/pull/new/linux-notes[K
+remote: 
+To https://github.com/haryyy7/internship_f9
+ * [new branch]      linux-notes -> linux-notes
+branch 'linux-notes' set up to track 'origin/linux-notes'.
+[1m[7m%[27m[1m[0m                                                                                                    ]7;file://Harisankers-MacBook-Air.local/Users/harisanker/Projects-101/intern-repo[0m[27m[24m[Jharisanker@Harisankers-MacBook-Air intern-repo % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Wed Aug 12 17:52:01 2026
