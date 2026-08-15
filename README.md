@@ -46,6 +46,11 @@ Completed tasks:
 
 Terminologies covered: ec2, keypairs, sg, s3 bucket, obkects, permission, systemctl, apache2, ports.
 
+*Date 14-08-2025:*
+Completed tasks:
+        - Covered VPC basics.
+        - Created a custom VPC apart from the given default VPC.
+        - During creation, learnt more about the configs of subnets, CIDR blocks, routing table - networking concepts that helps to limit as well as allow traffic from IP address range according to our interests.
 
-        
-        -
+
+
