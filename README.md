@@ -1,3 +1,6 @@
+![Img not loaded](screenshot-1.png)
+
+
 # F9 Internship Notes
 
 *Date 10-08-2026:*
@@ -53,4 +56,17 @@ Completed tasks:
         - During creation, learnt more about the configs of subnets, CIDR blocks, routing table - networking concepts that helps to limit as well as allow traffic from IP address range according to our interests.
 
 
+*Date 17-9-2026:*
+Completed tasks:
+        -Familiarity with clooudwatch meterics and logs, metrics --> cpu utilisation,network etc, good for alerting, monitoring, overall statisitcs. logs --> check the reason for how metrics work, best use case for troubleshooting to find what went wrong.
+        - Watched metrics of the EC2 instance afetr and before cpu spiking (py program to manually spike cpu util.)
+        - Created an CW Agent custom namespace, added IAM role with two policies associated with CW Agent. SSM agent configured in order to configure agent use.
+        - Create a dashboard and added widgets for metrics.
+        - Stress test the instance, watched the dashboard raise up after program running and website refreshed.
 
+*Date 18-08-2026:*
+Completed tasks:
+        -Implemeted an alarm log, that autoamtically sents a mail with body as given after a threshold has passed. Used CPUutilisation metric for the alert.
+        - Received alert, stopped the instance automatically as set in alert rule, found out the error.
+        - Played around with apche2 servers and the website around it. Deliberately broke the site by changing access permissions of the index.html file (chmod) --> Error message "access denied". Checked unresponsiveness of temrinal when security inbound rules for http port 80 is altered --> Connection timed out. Config files are
+        - Common troubleshooting implementation using terminal and log monitoring studied.
