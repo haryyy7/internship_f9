@@ -1,4 +1,4 @@
-![Img not loaded](screenshot-1.png)
+![Internship Schedule](./screenshot-1.png)
 
 
 # F9 Internship Notes
