@@ -3,7 +3,7 @@
 
 # F9 Internship Notes
 
-*Date 10-08-2026:*
+*Day 1, Date 10-08-2026:*
 Completed tasks:  
     - Overview of company, and structured plan of tasks ahead as produced by Team Lead.
     - Repo created to log daily tasks and agendas.
@@ -13,7 +13,7 @@ Completed tasks:
 
 Tools covered: Github, IAM, AWS root account, Git.
 
-*Date 11-08-2026:*
+*Day 2, Date 11-08-2026:*
 Completed tasks:
         - EC2 instances launched
         - Created demo directories for practice of Linux commands.
@@ -23,7 +23,7 @@ Terminologies covered: keypair, ssh,chmod,aws ec2,security groups,
 chmod,grep,find,sed,awk.
 
 
-*Date 12-08-2026:*
+*Day 3, Date 12-08-2026:*
 Completed tasks:
         -Previous day objective of user/group permissions and access controls in the EC2 instance terminal.
         - Got familiar with Github workflows and commands.
@@ -35,7 +35,7 @@ Terminologies covered: whoami,groups,id,[owner,group,others],chown
 Summary: user --> group --> directory ownership --> directory permission --> file ownership --> file permissions
 
 
-*Date 13-08-2026:*
+*Day 4, Date 13-08-2026:*
 Completed tasks:
         - Todays tasks included creating an EC2 instance, already done so started by creating one another instance to refresh knowledge.
         - Hosted an HTTP server by installing apache2 and enabling the service, modified the index.html file at default directory of apache server ( var/www/html).
@@ -49,14 +49,31 @@ Completed tasks:
 
 Terminologies covered: ec2, keypairs, sg, s3 bucket, obkects, permission, systemctl, apache2, ports.
 
-*Date 14-08-2025:*
+*Day 5, Date 14-08-2025:*
 Completed tasks:
         - Covered VPC basics.
         - Created a custom VPC apart from the given default VPC.
         - During creation, learnt more about the configs of subnets, CIDR blocks, routing table - networking concepts that helps to limit as well as allow traffic from IP address range according to our interests.
 
+*Day 6, Date 15-08-2025:*
+Completed tasks:
+        - Already done with teh apache setup, to test the working EC2 instance.
+        - Shell concepts covered with it.
+        - Security group configs to enable port 22 access.
+        -NACL differences from the SG understood.(inbound as well as outbond, deny access also.)
+        - Experimented with NACL, SG, by enabling and disabling ports for a .py static website with port 5000 open.
 
-*Date 17-9-2026:*
+*Day 7, Date 16-08-2025:*
+Completed tasks:
+        - Setup a reverse proxy keeping an nginx server in front of an apache server.
+        - Modified the config files of the apache server to recieve traffic from port 8080 and localhost only, to avoid port conflict with aapche port 80.
+        - Used nginx server to enable https connection to the website using a demo keypair and certificate (self signed) and also opened port 443 for https connection.
+        - Verified everything is working and final apache server is the one serving traffic.
+        - 
+
+Terminologies covered: reverse proxy, nginx, apache, https, ports, certificates, self signed, keypair, config files, serving traffic.
+
+*Day 8, Date 17-9-2026:*
 Completed tasks:
         -Familiarity with clooudwatch meterics and logs, metrics --> cpu utilisation,network etc, good for alerting, monitoring, overall statisitcs. logs --> check the reason for how metrics work, best use case for troubleshooting to find what went wrong.
         - Watched metrics of the EC2 instance afetr and before cpu spiking (py program to manually spike cpu util.)
@@ -64,9 +81,26 @@ Completed tasks:
         - Create a dashboard and added widgets for metrics.
         - Stress test the instance, watched the dashboard raise up after program running and website refreshed.
 
-*Date 18-08-2026:*
+*Day 9, Date 18-08-2026:*
 Completed tasks:
         -Implemeted an alarm log, that autoamtically sents a mail with body as given after a threshold has passed. Used CPUutilisation metric for the alert.
         - Received alert, stopped the instance automatically as set in alert rule, found out the error.
         - Played around with apche2 servers and the website around it. Deliberately broke the site by changing access permissions of the index.html file (chmod) --> Error message "access denied". Checked unresponsiveness of temrinal when security inbound rules for http port 80 is altered --> Connection timed out. Config files are
         - Common troubleshooting implementation using terminal and log monitoring studied.
+
+*Day 10, Date 19-08-2025:*
+Completed tasks:
+        - Created a presentation, combining all progresses journalled.
+        - Refreshed concepts covered upto now.
+
+*Day 11, Date 20-08-2025:*
+Completed tasks:
+        - Got familiar with ALB concepts- listener, target groups, health checks, routing algo.
+        - Implemented an ALB sitting in front of three apache web servers with the listener porting to htttp port 80 and roles to forward the traffic to the target groups, each group hosting a different website.
+        - Understood the ALB workflow of Listener --> Target Groups --> Targeted EC2 instances.
+        - Accessed the website fromt eh newly provided ALB domain url.
+        - Monitored the metrics in cloudwatch for the ALB and the target groups. Altered the traffic flow for health checks.
+        - After refreshing the website, each site loaded alternatively, hence learning Round-Robin algo.
+        - Stopped one apache2 service of one instance and found flagging of unhealthy status of that instance.
+        - Turning on stikcy sessions, keep one isntance connected to user for multiple refreshes.
+        

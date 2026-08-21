@@ -46,6 +46,7 @@ Terminologies covered: ec2, keypairs, sg, s3 bucket, obkects, permission, system
 
 
         
-        -
-
+*Date 14-08-2026*:
+Completed tasks:  
+        
         
