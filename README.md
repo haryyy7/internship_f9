@@ -104,3 +104,24 @@ Completed tasks:
         - Stopped one apache2 service of one instance and found flagging of unhealthy status of that instance.
         - Turning on stikcy sessions, keep one isntance connected to user for multiple refreshes.
         
+
+*Day 12, Date 21-08-2025:*
+Completed tasks:
+        - Learned AMI (golden images) as reusable blueprints capturing 
+        OS + software configuration
+        - Built Launch Template defining instance recipe: AMI, instance type, 
+        key pair, security group
+        - Created Auto Scaling Group with desired=2, min=1, max=3 spread 
+        across 2 AZs
+        - Enabled ELB health checks so ASG responds to app-level failures, 
+        not just instance crashes
+        - Watched ASG auto-launch 2 identical instances (no manual clicks)
+        - Triggered self-healing: stopped Apache on one instance → ASG 
+        detected unhealthy status, terminated it, launched replacement 
+        within 2–3 minutes
+        - Tested CPU-based scaling policy (50% threshold) → stress test 
+        triggered auto-launch of 3rd instance, scaled back down post-load
+        - Key concept: ASG assumes identical clones (replacement is automatic, 
+        not manual intervention)
+        
+
