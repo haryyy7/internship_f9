@@ -4,124 +4,204 @@
 # F9 Internship Notes
 
 *Day 1, Date 10-08-2026:*
-Completed tasks:  
-    - Overview of company, and structured plan of tasks ahead as produced by Team Lead.
-    - Repo created to log daily tasks and agendas.
-    - Went through IAM Basics and created a demo IAM user.
-    - Went through GIT basics, installed git on system.
-    - Installed IDE (Antigravity), getting familiar with git commands.
+Completed tasks:
+        - Company overview and walkthrough of the structured task plan from the Team Lead.
+        - Created a repo to log daily tasks and agendas.
+        - Covered IAM basics and created a demo IAM user.
+        - Covered Git basics and installed Git locally.
+        - Installed IDE (Antigravity), got familiar with core Git commands.
 
-Tools covered: Github, IAM, AWS root account, Git.
+Terminologies covered: GitHub, IAM, AWS root account, Git.
 
 *Day 2, Date 11-08-2026:*
 Completed tasks:
-        - EC2 instances launched
-        - Created demo directories for practice of Linux commands.
-        - Logged all commands in session.logs for final presentation.
+        - Launched an EC2 instance.
+        - Created demo directories to practice core Linux commands.
+        - Logged all commands run during the session into session.logs for the final presentation.
 
-Terminologies covered: keypair, ssh,chmod,aws ec2,security groups,
-chmod,grep,find,sed,awk.
-
+Terminologies covered: keypair, SSH, chmod, EC2, security groups, grep, find, sed, awk.
 
 *Day 3, Date 12-08-2026:*
 Completed tasks:
-        -Previous day objective of user/group permissions and access controls in the EC2 instance terminal.
-        - Got familiar with Github workflows and commands.
-        -Created a demo repo to test out the commands and simultaneously recorded and pushed it with the commands performed.
+        - Continued prior day's objective: user/group permissions and access control on the EC2 instance.
+        - Got familiar with GitHub workflows and commands.
+        - Created a demo repo to test commands, recording and pushing each step as it was performed.
 
-
-Terminologies covered: whoami,groups,id,[owner,group,others],chown
-                        git clone,init,satus,add,commit,log,switch,branch.
-Summary: user --> group --> directory ownership --> directory permission --> file ownership --> file permissions
-
+Terminologies covered: whoami, groups, id, owner/group/others, chown, git clone, init, status, add, commit, log, switch, branch.
+Summary: user → group → directory ownership → directory permission → file ownership → file permissions.
 
 *Day 4, Date 13-08-2026:*
 Completed tasks:
-        - Todays tasks included creating an EC2 instance, already done so started by creating one another instance to refresh knowledge.
-        - Hosted an HTTP server by installing apache2 and enabling the service, modified the index.html file at default directory of apache server ( var/www/html).
-        - Used the same Secuiry group and key pair, modified the SG to enable listening on port 80 also (HTTP).
-        - Expected outputs received for both websites.
-        - Started with basics of S3 - buckets, objects, uploading files, lifecycle rules, permissions, endpoint.
-        - Uploading a demo static file including index.html.
-        - Accessed and verified the working of the website using the s3 bucket endpoint.
-        - Difference of hosting a website in ec2 instance and the s3 bucket.
-        - Pushed the locally available demo website used for s3 bucket to GH and cloned it from the ec2 terminal. Moved the cloned files from default directory to the apache display directory /var/www/html to then view the new website on the public address.
+        - Launched a second EC2 instance to reinforce the prior day's setup.
+        - Installed and enabled Apache2, hosting an HTTP server; modified index.html at the default document root (/var/www/html).
+        - Reused the existing security group and key pair, updating the SG to allow inbound HTTP (port 80).
+        - Confirmed both websites returned the expected output.
+        - Covered S3 fundamentals: buckets, objects, file uploads, lifecycle rules, permissions, and endpoints.
+        - Uploaded a demo static site (including index.html) to an S3 bucket and verified it via the bucket endpoint.
+        - Compared hosting a website on EC2 versus S3.
+        - Pushed the local demo site to GitHub, cloned it from the EC2 terminal, and moved the files into /var/www/html to serve them from the public address.
 
-Terminologies covered: ec2, keypairs, sg, s3 bucket, obkects, permission, systemctl, apache2, ports.
+Terminologies covered: EC2, keypairs, security groups, S3 bucket, objects, permissions, systemctl, Apache2, ports.
 
 *Day 5, Date 14-08-2025:*
 Completed tasks:
-        - Covered VPC basics.
-        - Created a custom VPC apart from the given default VPC.
-        - During creation, learnt more about the configs of subnets, CIDR blocks, routing table - networking concepts that helps to limit as well as allow traffic from IP address range according to our interests.
+        - Covered VPC fundamentals.
+        - Created a custom VPC separate from the default VPC.
+        - Explored subnet configuration, CIDR blocks, and route tables — the networking concepts that control which traffic is allowed or restricted by IP range.
+
+Terminologies covered: VPC, subnets, CIDR block, route table.
 
 *Day 6, Date 15-08-2025:*
 Completed tasks:
-        - Already done with teh apache setup, to test the working EC2 instance.
-        - Shell concepts covered with it.
-        - Security group configs to enable port 22 access.
-        -NACL differences from the SG understood.(inbound as well as outbond, deny access also.)
-        - Experimented with NACL, SG, by enabling and disabling ports for a .py static website with port 5000 open.
+        - Reused the existing Apache setup to validate the EC2 instance.
+        - Covered core shell concepts alongside it.
+        - Configured the security group to allow port 22 (SSH) access.
+        - Understood NACLs versus security groups — inbound/outbound rules and explicit deny behavior.
+        - Experimented with NACL and SG rules by enabling/disabling ports for a Python static site running on port 5000.
+
+Terminologies covered: shell, security groups, NACL, inbound/outbound rules, deny rules.
 
 *Day 7, Date 16-08-2025:*
 Completed tasks:
-        - Setup a reverse proxy keeping an nginx server in front of an apache server.
-        - Modified the config files of the apache server to recieve traffic from port 8080 and localhost only, to avoid port conflict with aapche port 80.
-        - Used nginx server to enable https connection to the website using a demo keypair and certificate (self signed) and also opened port 443 for https connection.
-        - Verified everything is working and final apache server is the one serving traffic.
-        - 
+        - Set up a reverse proxy with Nginx sitting in front of Apache.
+        - Reconfigured Apache to listen on port 8080, localhost only, avoiding a port conflict with Nginx on port 80.
+        - Used Nginx to enable HTTPS with a self-signed certificate and key pair, opening port 443 for encrypted traffic.
+        - Verified the full chain — confirmed Apache was still the server ultimately serving traffic, routed through Nginx.
 
-Terminologies covered: reverse proxy, nginx, apache, https, ports, certificates, self signed, keypair, config files, serving traffic.
+Terminologies covered: reverse proxy, Nginx, Apache, HTTPS, self-signed certificate, config files.
 
-*Day 8, Date 17-9-2026:*
+*Day 8, Date 17-08-2026:*
 Completed tasks:
-        -Familiarity with clooudwatch meterics and logs, metrics --> cpu utilisation,network etc, good for alerting, monitoring, overall statisitcs. logs --> check the reason for how metrics work, best use case for troubleshooting to find what went wrong.
-        - Watched metrics of the EC2 instance afetr and before cpu spiking (py program to manually spike cpu util.)
-        - Created an CW Agent custom namespace, added IAM role with two policies associated with CW Agent. SSM agent configured in order to configure agent use.
-        - Create a dashboard and added widgets for metrics.
-        - Stress test the instance, watched the dashboard raise up after program running and website refreshed.
+        - Got familiar with CloudWatch metrics and logs — metrics (CPU utilization, network, etc.) for alerting and monitoring; logs for understanding *why* a metric moved, most useful for troubleshooting.
+        - Observed EC2 metrics before and after a manual CPU spike (via a small Python stress script).
+        - Created a custom CloudWatch Agent namespace; attached an IAM role with two CW Agent policies; configured the SSM Agent to support it.
+        - Built a dashboard and added widgets for the collected metrics.
+        - Ran a stress test and watched the dashboard respond in real time alongside repeated site refreshes.
+
+Terminologies covered: CloudWatch metrics, CloudWatch Logs, CloudWatch Agent, IAM role, SSM Agent, dashboard.
 
 *Day 9, Date 18-08-2026:*
 Completed tasks:
-        -Implemeted an alarm log, that autoamtically sents a mail with body as given after a threshold has passed. Used CPUutilisation metric for the alert.
-        - Received alert, stopped the instance automatically as set in alert rule, found out the error.
-        - Played around with apche2 servers and the website around it. Deliberately broke the site by changing access permissions of the index.html file (chmod) --> Error message "access denied". Checked unresponsiveness of temrinal when security inbound rules for http port 80 is altered --> Connection timed out. Config files are
-        - Common troubleshooting implementation using terminal and log monitoring studied.
+        - Implemented an alarm that automatically sends an email with a custom message once a threshold is breached, based on the CPUUtilization metric.
+        - Received the alert, had the instance auto-stop per the alarm's configured action, and diagnosed the cause.
+        - Deliberately broke the site by revoking index.html's read permissions via chmod — reproduced the "Access Denied" error.
+        - Removed the inbound HTTP rule and confirmed the resulting "connection timed out" behavior at the terminal.
+        - Practiced common troubleshooting technique combining terminal diagnostics with log monitoring.
+
+Terminologies covered: CloudWatch alarm, SNS, chmod, access denied, connection timeout.
 
 *Day 10, Date 19-08-2025:*
 Completed tasks:
-        - Created a presentation, combining all progresses journalled.
-        - Refreshed concepts covered upto now.
+        - Built a presentation consolidating progress logged so far.
+        - Reviewed and refreshed all concepts covered to date.
+
+Terminologies covered: documentation, monthly review.
 
 *Day 11, Date 20-08-2025:*
 Completed tasks:
-        - Got familiar with ALB concepts- listener, target groups, health checks, routing algo.
-        - Implemented an ALB sitting in front of three apache web servers with the listener porting to htttp port 80 and roles to forward the traffic to the target groups, each group hosting a different website.
-        - Understood the ALB workflow of Listener --> Target Groups --> Targeted EC2 instances.
-        - Accessed the website fromt eh newly provided ALB domain url.
-        - Monitored the metrics in cloudwatch for the ALB and the target groups. Altered the traffic flow for health checks.
-        - After refreshing the website, each site loaded alternatively, hence learning Round-Robin algo.
-        - Stopped one apache2 service of one instance and found flagging of unhealthy status of that instance.
-        - Turning on stikcy sessions, keep one isntance connected to user for multiple refreshes.
-        
+        - Got familiar with ALB concepts — listeners, target groups, health checks, routing algorithm.
+        - Implemented an ALB in front of three Apache web servers, with the listener on port 80 forwarding to target groups, each hosting a different site.
+        - Understood the ALB workflow: Listener → Target Groups → EC2 instances.
+        - Accessed the site through the ALB's provided domain URL.
+        - Monitored ALB and target group metrics in CloudWatch; adjusted traffic flow around health checks.
+        - Refreshing the site alternated between the three sites — observed round-robin routing in action.
+        - Stopped Apache on one instance and watched it get flagged unhealthy.
+        - Enabled sticky sessions, keeping one instance bound to a user across multiple refreshes.
+
+Terminologies covered: ALB, listener, target group, health check, round-robin, sticky sessions.
 
 *Day 12, Date 21-08-2025:*
 Completed tasks:
-        - Learned AMI (golden images) as reusable blueprints capturing 
-        OS + software configuration
-        - Built Launch Template defining instance recipe: AMI, instance type, 
-        key pair, security group
-        - Created Auto Scaling Group with desired=2, min=1, max=3 spread 
-        across 2 AZs
-        - Enabled ELB health checks so ASG responds to app-level failures, 
-        not just instance crashes
-        - Watched ASG auto-launch 2 identical instances (no manual clicks)
-        - Triggered self-healing: stopped Apache on one instance → ASG 
-        detected unhealthy status, terminated it, launched replacement 
-        within 2–3 minutes
-        - Tested CPU-based scaling policy (50% threshold) → stress test 
-        triggered auto-launch of 3rd instance, scaled back down post-load
-        - Key concept: ASG assumes identical clones (replacement is automatic, 
-        not manual intervention)
-        
+        - Learned AMIs (golden images) as reusable blueprints capturing OS and software configuration.
+        - Built a Launch Template defining the instance recipe: AMI, instance type, key pair, security group.
+        - Created an Auto Scaling Group (desired=2, min=1, max=3) spread across 2 Availability Zones.
+        - Enabled ELB health checks so the ASG responds to app-level failures, not just instance crashes.
+        - Watched the ASG auto-launch 2 identical instances with zero manual intervention.
+        - Triggered self-healing: stopped Apache on one instance → ASG detected the unhealthy status, terminated it, and launched a replacement within 2–3 minutes.
+        - Tested a CPU-based scaling policy (50% threshold) — a stress test triggered an auto-launched 3rd instance, which scaled back down once load cleared.
+        - Key concept: an ASG assumes identical clones — replacement is automatic, not manual.
+
+Terminologies covered: AMI, Launch Template, Auto Scaling Group, ELB health check, self-healing, scaling policy.git 
+
+*Day 13, Date 22-08-2025:*
+Completed tasks:
+        - Created a DB subnet group and dedicated RDS security group, allowing port 3306 only from the EC2 security group.
+        - Launched RDS MySQL instance (Single-AZ), connected via mysql client from EC2 terminal.
+        - Created a test database and table, inserted sample data for later validation.
+        - Understood Multi-AZ (sync replication, automatic failover, standby not queryable) vs Read Replica (async, read-only, manual promotion).
+
+Terminologies covered: RDS, DB subnet group, Multi-AZ, Read Replica, endpoint.
+
+*Day 14, Date 23-08-2025:*
+Completed tasks:
+        - Took a manual snapshot as baseline, inserted new data afterward to test restore accuracy.
+        - Restored snapshot to a new instance, confirmed only pre-snapshot data was present. Learned restore always creates a new instance, never an in-place revert.
+        - Extended exploration: enabled real Multi-AZ and tested failover, measuring brief downtime with a continuous query loop.
+        - Created a Read Replica, observed replication lag, then promoted it to a standalone writable instance.
+        - Performed point-in-time recovery (PITR) to a custom timestamp and validated the exact data cutoff.
+        - Copied a snapshot cross-region for disaster recovery practice.
+
+Terminologies covered: manual/automated snapshot, restore, PITR, replication lag, promotion, cross-region copy.
+
+*Day 15, Date 24-08-2025:*
+Completed tasks:
+        - Audited own IAM user via Access Advisor, found over-permissioned AdministratorAccess grant.
+        - Wrote a custom least-privilege JSON policy scoped to EC2, RDS, CloudWatch, S3.
+        - Created a test IAM user with the scoped policy, verified restricted actions failed with AccessDenied.
+
+Terminologies covered: least privilege, IAM policy, Access Advisor, AccessDenied.
+
+*Day 16, Date 25-08-2025:*
+Completed tasks:
+        - Enabled MFA on root account and personal IAM user via authenticator app.
+        - Checked for and removed root access keys.
+        - Created a WAF Web ACL with AWS Managed Core Rule Set, associated it with the ALB.
+        - Tested mock SQL injection and XSS requests, confirmed WAF blocked them (403), verified in WAF request logs.
+
+Terminologies covered: MFA, root access keys, WAF, Web ACL, Managed Rules.
+
+*Day 17, Date 26-08-2025:*
+Completed tasks:
+        - Explored Cost Explorer, grouped monthly spend by service.
+        - Checked for unattached EBS volumes and unused Elastic IPs, cleaned up what wasn't needed.
+        - Reviewed and trimmed old RDS snapshots.
+        - Set up a billing budget alert.
+
+Terminologies covered: Cost Explorer, EBS volumes, Elastic IP, budget alert.
+
+*Day 18, Date 27-08-2025:*
+Completed tasks:
+        - Reviewed AWS's own Savings Plans recommendations based on usage history.
+        - Compared On-Demand vs Reserved Instance pricing without purchasing.
+        - Modeled real cost difference for a year of usage via AWS Pricing Calculator.
+
+Terminologies covered: Savings Plans, Reserved Instances, On-Demand, Spot Instances.
+
+*Day 19, Date 28-08-2025:*
+Completed tasks:
+        - Installed Docker Engine on Ubuntu EC2 via official Docker repository.
+        - Verified with hello-world container, added user to docker group to run without sudo.
+        - Explored docker info and docker images.
+
+Terminologies covered: Docker daemon, Docker CLI, Docker Hub, containers vs VMs.
+
+*Day 20, Date 29-08-2025:*
+Completed tasks:
+        - Wrote a Dockerfile for the static site project (FROM nginx:alpine, COPY, EXPOSE).
+        - Built the image, ran it as a container with port mapping (-p 8080:80).
+        - Inspected the running container via docker logs and docker exec.
+        - Learned volume mounts (-v) for live file editing without rebuilding.
+        - Practiced scp to pull website files from another EC2 instance/account.
+
+Terminologies covered: Dockerfile, image, container, docker build/run, port mapping, volume mount, scp.
+
+*Day 21, Date 30-08-2025:*
+Completed tasks:
+        - Wrote a docker-compose.yml defining three services: web (nginx static site), db (MySQL), adminer (DB admin UI).
+        - Brought up the stack with docker compose up -d, verified all containers running.
+        - Connected to MySQL via Adminer using service name "db" as hostname, confirming built-in container networking.
+        - Tested named volume persistence across a down/up cycle.
+        - Compared self-hosted containerized MySQL against managed RDS from Week 2.
+
+Terminologies covered: Docker Compose, services, named volumes, depends_on, container networking.
 
