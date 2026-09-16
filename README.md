@@ -3,7 +3,7 @@
 
 # F9 Internship Notes
 
-*Day 1, Date 10-08-2026:*
+*Day 1:*
 Completed tasks:
 
 - Company overview and walkthrough of the structured task plan from the Team Lead.
@@ -14,7 +14,7 @@ Completed tasks:
 
 Terminologies covered: GitHub, IAM, AWS root account, Git.
 
-*Day 2, Date 11-08-2026:*
+*Day 2:*
 Completed tasks:
 
 - Launched an EC2 instance.
@@ -23,7 +23,7 @@ Completed tasks:
 
 Terminologies covered: keypair, SSH, chmod, EC2, security groups, grep, find, sed, awk.
 
-*Day 3, Date 12-08-2026:*
+*Day 3:*
 Completed tasks:
 
 - Continued prior day's objective: user/group permissions and access control on the EC2 instance.
@@ -33,7 +33,7 @@ Completed tasks:
 Terminologies covered: whoami, groups, id, owner/group/others, chown, git clone, init, status, add, commit, log, switch, branch.
 Summary: user → group → directory ownership → directory permission → file ownership → file permissions.
 
-*Day 4, Date 13-08-2026:*
+*Day 4:*
 Completed tasks:
 
 - Launched a second EC2 instance to reinforce the prior day's setup.
@@ -47,7 +47,7 @@ Completed tasks:
 
 Terminologies covered: EC2, keypairs, security groups, S3 bucket, objects, permissions, systemctl, Apache2, ports.
 
-*Day 5, Date 14-08-2025:*
+*Day 5:*
 Completed tasks:
 
 - Covered VPC fundamentals.
@@ -56,7 +56,7 @@ Completed tasks:
 
 Terminologies covered: VPC, subnets, CIDR block, route table.
 
-*Day 6, Date 15-08-2025:*
+*Day 6:*
 Completed tasks:
 
 - Reused the existing Apache setup to validate the EC2 instance.
@@ -67,7 +67,7 @@ Completed tasks:
 
 Terminologies covered: shell, security groups, NACL, inbound/outbound rules, deny rules.
 
-*Day 7, Date 16-08-2025:*
+*Day 7:*
 Completed tasks:
 
 - Set up a reverse proxy with Nginx sitting in front of Apache.
@@ -77,7 +77,7 @@ Completed tasks:
 
 Terminologies covered: reverse proxy, Nginx, Apache, HTTPS, self-signed certificate, config files.
 
-*Day 8, Date 17-08-2026:*
+*Day 8:*
 Completed tasks:
 
 - Got familiar with CloudWatch metrics and logs — metrics (CPU utilization, network, etc.) for alerting and monitoring; logs for understanding *why* a metric moved, most useful for troubleshooting.
@@ -88,7 +88,7 @@ Completed tasks:
 
 Terminologies covered: CloudWatch metrics, CloudWatch Logs, CloudWatch Agent, IAM role, SSM Agent, dashboard.
 
-*Day 9, Date 18-08-2026:*
+*Day 9:*
 Completed tasks:
 
 - Implemented an alarm that automatically sends an email with a custom message once a threshold is breached, based on the CPUUtilization metric.
@@ -99,7 +99,7 @@ Completed tasks:
 
 Terminologies covered: CloudWatch alarm, SNS, chmod, access denied, connection timeout.
 
-*Day 10, Date 19-08-2025:*
+*Day 10:*
 Completed tasks:
 
 - Built a presentation consolidating progress logged so far.
@@ -107,7 +107,7 @@ Completed tasks:
 
 Terminologies covered: documentation, monthly review.
 
-*Day 11, Date 20-08-2025:*
+*Day 11:*
 Completed tasks:
 
 - Got familiar with ALB concepts — listeners, target groups, health checks, routing algorithm.
@@ -121,7 +121,7 @@ Completed tasks:
 
 Terminologies covered: ALB, listener, target group, health check, round-robin, sticky sessions.
 
-*Day 12, Date 21-08-2025:*
+*Day 12:*
 Completed tasks:
 
 - Learned AMIs (golden images) as reusable blueprints capturing OS and software configuration.
@@ -135,7 +135,7 @@ Completed tasks:
 
 Terminologies covered: AMI, Launch Template, Auto Scaling Group, ELB health check, self-healing, scaling policy.git 
 
-*Day 13, Date 22-08-2025:*
+*Day 13:*
 Completed tasks:
 
 - Created a DB subnet group and dedicated RDS security group, allowing port 3306 only from the EC2 security group.
@@ -145,7 +145,7 @@ Completed tasks:
 
 Terminologies covered: RDS, DB subnet group, Multi-AZ, Read Replica, endpoint.
 
-*Day 14, Date 23-08-2025:*
+*Day 14:*
 Completed tasks:
 
 - Took a manual snapshot as baseline, inserted new data afterward to test restore accuracy.
@@ -157,7 +157,7 @@ Completed tasks:
 
 Terminologies covered: manual/automated snapshot, restore, PITR, replication lag, promotion, cross-region copy.
 
-*Day 15, Date 24-08-2025:*
+*Day 15:*
 Completed tasks:
 
 - Audited own IAM user via Access Advisor, found over-permissioned AdministratorAccess grant.
@@ -166,7 +166,7 @@ Completed tasks:
 
 Terminologies covered: least privilege, IAM policy, Access Advisor, AccessDenied.
 
-*Day 16, Date 25-08-2025:*
+*Day 16:*
 Completed tasks:
 
 - Enabled MFA on root account and personal IAM user via authenticator app.
@@ -176,7 +176,7 @@ Completed tasks:
 
 Terminologies covered: MFA, root access keys, WAF, Web ACL, Managed Rules.
 
-*Day 17, Date 26-08-2025:*
+*Day 17:*
 Completed tasks:
 
 - Explored Cost Explorer, grouped monthly spend by service.
@@ -186,7 +186,7 @@ Completed tasks:
 
 Terminologies covered: Cost Explorer, EBS volumes, Elastic IP, budget alert.
 
-*Day 18, Date 27-08-2025:*
+*Day 18:*
 Completed tasks:
 
 - Reviewed AWS's own Savings Plans recommendations based on usage history.
@@ -195,7 +195,7 @@ Completed tasks:
 
 Terminologies covered: Savings Plans, Reserved Instances, On-Demand, Spot Instances.
 
-*Day 19, Date 28-08-2025:*
+*Day 19:*
 Completed tasks:
 
 - Installed Docker Engine on Ubuntu EC2 via official Docker repository.
@@ -204,7 +204,7 @@ Completed tasks:
 
 Terminologies covered: Docker daemon, Docker CLI, Docker Hub, containers vs VMs.
 
-*Day 20, Date 29-08-2025:*
+*Day 20:*
 Completed tasks:
 
 - Wrote a Dockerfile for the static site project (FROM nginx:alpine, COPY, EXPOSE).
@@ -215,7 +215,7 @@ Completed tasks:
 
 Terminologies covered: Dockerfile, image, container, docker build/run, port mapping, volume mount, scp.
 
-*Day 21, Date 30-08-2025:*
+*Day 21:*
 Completed tasks:
 
 - Wrote a docker-compose.yml defining three services: web (nginx static site), db (MySQL), adminer (DB admin UI).
