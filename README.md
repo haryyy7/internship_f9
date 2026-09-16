@@ -226,3 +226,46 @@ Completed tasks:
 
 Terminologies covered: Docker Compose, services, named volumes, depends_on, container networking.
 
+*Day 22:*
+
+Completed tasks:
+- Started with CI/CD concepts and understood the difference between Continuous Integration and Continuous Deployment.
+- Reviewed how Git-based source control can be connected with automated build and deployment workflows.
+- Introduced GitHub Actions and understood the workflow structure using YAML configuration files.
+- Created/updated the CI workflow for the Docker-based application repository.
+- Understood the basic workflow sequence of code push → GitHub Actions runner → Docker build → Docker Hub image push.
+- Worked with GitHub repository secrets/environment variables for securely providing Docker Hub credentials to the workflow.
+
+Terminologies covered: CI, CD, GitHub Actions, workflow, YAML, runner, job, step, Docker Hub, repository secrets, environment variables, automated build.
+
+⸻
+
+*Day 23*:
+
+Completed tasks:
+- Implemented the GitHub Actions CI workflow for the demo-cicd repository.
+- Configured the workflow to checkout the repository and authenticate with Docker Hub using DOCKERHUB_USERNAME and DOCKERHUB_TOKEN.
+- Added Docker build and push steps for the application components: vote, result and worker.
+- Successfully executed the main workflow and verified that the Docker images were built and pushed to Docker Hub.
+- Encountered an authentication failure when the workflow was triggered from a Dependabot PR because the required repository secrets were not available in that context.
+- Analysed the error message "Username and password required" and understood the difference between workflow execution and availability of secrets in different GitHub event contexts.
+- Reviewed the separation between the CI stage that builds/pushes images and the CD stage that would later deploy those images to the EC2 environment.
+
+Terminologies covered: GitHub Actions, CI workflow, Docker build, Docker push, Docker Hub, GitHub Secrets, Dependabot, pull request, authentication, CI pipeline.
+
+The actual workflow was based around building and pushing the three application images, and the successful main workflow was distinguished from the Dependabot run where credentials were unavailable.
+
+⸻
+
+*Day 24*:
+
+Completed tasks:
+- Continued working on the CD portion of the CI/CD workflow and the deployment architecture for the containerised application.
+- Reviewed the Docker Compose configuration that would be used on the EC2 deployment environment.
+- Identified that the existing docker-compose.images.yml was still referencing the original Docker Samples images instead of the newly built Docker Hub images.
+- Planned the required image mapping to the Docker Hub repository images: haryyy7/demo-cicd-vote, haryyy7/demo-cicd-result and haryyy7/demo-cicd-worker.
+- Reviewed the deployment sequence required on EC2: pulling the updated images and starting the services through Docker Compose.
+- Worked through CI/CD troubleshooting and distinguished between a successful CI image-build/push stage and the pending deployment stage.
+- Understood the importance of separating image creation from deployment so that the same versioned container image can be promoted to the deployment environment.
+
+Terminologies covered: CD, deployment, Docker Compose, image registry, Docker Hub, docker-compose.images.yml, docker compose pull, docker compose up, EC2 deployment, image tagging, pipeline troubleshooting.
