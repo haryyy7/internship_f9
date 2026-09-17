@@ -269,3 +269,24 @@ Completed tasks:
 - Understood the importance of separating image creation from deployment so that the same versioned container image can be promoted to the deployment environment.
 
 Terminologies covered: CD, deployment, Docker Compose, image registry, Docker Hub, docker-compose.images.yml, docker compose pull, docker compose up, EC2 deployment, image tagging, pipeline troubleshooting.
+
+*Day 25:*
+Completed tasks:
+        - Covered Terraform fundamentals: Infrastructure as Code, declarative vs imperative approach.
+        - Understood the core workflow: terraform init, plan, apply, destroy.
+        - Learned the role of the state file (terraform.tfstate) — Terraform's record of what it manages, compared against config on every plan.
+        - Understood provider blocks (AWS provider setup, region config) and how implicit dependencies work through resource references.
+        - Set up a Terraform project, initialized the AWS provider.
+
+Terminologies covered: Terraform, IaC, provider, state file, terraform init/plan/apply/destroy.
+
+*Day 26:*
+Completed tasks:
+        - Wrote a security group as Terraform code, mirroring the manually-configured SG from earlier weeks (SSH restricted to own IP, HTTP open).
+        - Wrote an EC2 instance resource referencing the security group directly, letting Terraform infer creation order automatically.
+        - Used user_data to automate Apache installation and site deployment on instance boot — zero manual SSH setup required.
+        - Ran terraform plan to dry-run the changes, then terraform apply to provision real infrastructure; verified via curl and the EC2 console.
+        - Modified a resource tag and reran plan, observing a targeted in-place update rather than a full recreate.
+        - Ran terraform destroy to tear down all managed resources cleanly, confirming removal in the console.
+
+Terminologies covered: resource block, implicit dependency graph, variables, user_data, terraform plan diff, destroy.
